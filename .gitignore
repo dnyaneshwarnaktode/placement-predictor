@@ -1,0 +1,51 @@
+# Ignore Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Ignore Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Ignore Next.js
+.next/
+out/
+.vercel
+
+# Ignore environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore ML models (too large for git)
+ml-service/models/*.pkl
+
+# Ignore dataset (download separately)
+ml-service/data/*.csv
+
+# Ignore IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore OS
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+logs/

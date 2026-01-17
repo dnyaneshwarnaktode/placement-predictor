@@ -1,0 +1,309 @@
+.container {
+    min-height: 100vh;
+    background: var(--bg-primary);
+}
+
+.nav {
+    background: var(--bg-secondary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.navContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.formContainer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.formContainer>div {
+    padding: 3rem;
+}
+
+.formContainer h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.formDesc {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+.formGrid {
+    display: grid;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.section {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-light);
+}
+
+.resultHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.resultHeader h1 {
+    font-size: 2.5rem;
+}
+
+.resultActions {
+    display: flex;
+    gap: 1rem;
+}
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.results>div {
+    padding: 2rem;
+}
+
+.results h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.chartContainer {
+    height: 300px;
+    margin-bottom: 2rem;
+}
+
+.placementInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.infoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: var(--radius-md);
+}
+
+.infoItem span:first-child {
+    color: var(--text-secondary);
+}
+
+.infoItem strong {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.salaryInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.salaryMain {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    border-radius: var(--radius-lg);
+}
+
+.salaryLabel {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.salaryValue {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.salaryRange {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.salaryRange>div {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.salaryRange span {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.salaryRange strong {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+}
+
+.skillGaps {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.noGaps {
+    text-align: center;
+    padding: 2rem;
+    color: var(--success);
+    font-size: 1.1rem;
+}
+
+.gapItem {
+    padding: 1.25rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--warning);
+}
+
+.gapHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.gapHeader strong {
+    color: var(--text-primary);
+    font-size: 1.05rem;
+}
+
+.gapDetails {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.recommendations {
+    padding: 1.5rem;
+    background: rgba(99, 102, 241, 0.05);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.recommendations h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--primary-light);
+}
+
+.recommendations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recommendations li {
+    padding: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.recommendations li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success);
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .navContent {
+        padding: 0 1rem;
+    }
+
+    .main {
+        padding: 2rem 1rem;
+    }
+
+    .formContainer>div {
+        padding: 2rem;
+    }
+
+    .formContainer h1 {
+        font-size: 2rem;
+    }
+
+    .results {
+        grid-template-columns: 1fr;
+    }
+
+    .resultHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .resultHeader h1 {
+        font-size: 2rem;
+    }
+
+    .salaryValue {
+        font-size: 2rem;
+    }
+}
